@@ -97,7 +97,7 @@ sumC
 
 ```
 ## function (x) 
-## .Primitive(".Call")(<pointer: 0x2afd5bc41800>, x)
+## .Call(<pointer: 0x2aaf32b3aef0>, x)
 ```
 
 ```r
@@ -105,7 +105,7 @@ sumC(c(1, 2, 1:4, rnorm(3)))
 ```
 
 ```
-## [1] 10.29151
+## [1] 12.26603
 ```
 
 ### Sourcing C++ code
@@ -151,14 +151,14 @@ sourceCpp("./src/ex_sumC.cpp")
 ```
 ## 
 ## > (x <- c(1, 3, rnorm(10)))
-##  [1]  1.0000000  3.0000000 -1.2964605 -2.2087759  0.4526701  0.3271494
-##  [7]  0.5451446  0.5449722 -0.0929920  0.4959805 -0.1397590  0.8345068
+##  [1]  1.0000000  3.0000000  0.9034087  0.5264740  1.0087976 -0.3438904
+##  [7]  0.8372165  1.2515454 -2.8218494  0.9934861  1.3197611  0.2468353
 ## 
 ## > sumC(x)
-## [1] 3.462436
+## [1] 7.921785
 ## 
 ## > sum(x)
-## [1] 3.462436
+## [1] 7.921785
 ```
 
 ## An example with a matrix
@@ -280,7 +280,7 @@ vectorised expression. Looks like R with the C++ efficiency (see the
 
 ### Arithmetic and logical operators
 
-`+ *, -, /, pow, <, <=, >, >=, ==, !=, !'
+`+ *, -, /, pow, <, <=, >, >=, ==, !=, !`
 
 ```
 NumericVector pdistC2(double x, NumericVector ys) {

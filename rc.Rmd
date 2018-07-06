@@ -211,7 +211,7 @@ vectorised expression. Looks like R with the C++ efficiency (see the
 
 ### Arithmetic and logical operators
 
-`+ *, -, /, pow, <, <=, >, >=, ==, !=, !'
+`+ *, -, /, pow, <, <=, >, >=, ==, !=, !`
 
 ```
 NumericVector pdistC2(double x, NumericVector ys) {
